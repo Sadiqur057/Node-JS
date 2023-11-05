@@ -1,0 +1,35 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: red;
+}
+
+nav{
+    background-color: rgb(30, 127, 30);
+    padding: 4px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li{
+    list-style: none;
+    align-self: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active{
+    background: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin: 2px;
+}
+.active a{
+    color: black;
+}

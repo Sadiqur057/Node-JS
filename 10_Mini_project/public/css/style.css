@@ -2,14 +2,16 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 h1{
     color: red;
 }
 
 nav{
-    background-color: rgb(30, 127, 30);
-    padding: 4px;
+    background-color: #EDECEC;
+    padding: 7px;
+    font-size: 17px;
 }
 nav ul{
     display: flex;
@@ -22,14 +24,35 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: white;
+    color: #676966
 }
 .active{
-    background: white;
     padding: 5px 10px;
     border-radius: 6px;
     margin: 2px;
 }
 .active a{
     color: black;
+    
+}
+a:hover{
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+/* ####### landing ####### */
+#landing{
+    background: url("../img/landing.jpg") ;
+    /* max-height: 700px; */
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+#product{
+    background-color: yellow;
+    max-height: 400px;
+    width: 100%;
+
 }

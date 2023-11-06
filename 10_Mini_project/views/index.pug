@@ -20,11 +20,11 @@ html(lang='en')
         .collapse.navbar-collapse#navbarSupportedContent
           ul.navbar-nav.me-auto.mb-2.mb-lg-0
             li.nav-item
-              a.nav-link.active(aria-current='page', href='#') Home
+              a.nav-link(href='#') Home
             li.nav-item
-              a.nav-link(href='#') Link
-            li.nav-item.dropdown
-              a.nav-link.dropdown-toggle(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false') Dropdown
+              a.nav-link(href='#') About
+            li.nav-item
+              a.nav-link.dropdown-toggle(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false') Services
               ul.dropdown-menu
                 li
                   a.dropdown-item(href='#') Action
@@ -34,18 +34,17 @@ html(lang='en')
                   hr.dropdown-divider
                 li
                   a.dropdown-item(href='#') Something else here
+          ul.navbar-nav
             li.nav-item
-              a.nav-link.disabled(aria-disabled='true') Disabled
-          form.d-flex(role='search')
-            input.form-control.me-2(type='search', placeholder='Search', aria-label='Search')
-            button.btn.btn-outline-success(type='submit') Search
+              button.btn.btn-outline-success.mx-2(type='submit') Login
+              button.btn.btn-outline-primary(type='submit') Register
 
         
     section#landing 
       .container.flex-container
         .flex-item-1
           h1.main-heading GreenBasket
-          h1.secondary-heading Your Fresh Green Grocery Source!
+          h1.secondary-heading.center Your Fresh Green Grocery Source!
         .flex-item-2
     
     h1.secondary-heading.text-center.mt-4 Product Categories
@@ -53,7 +52,7 @@ html(lang='en')
       .container
         .card
           .card-header
-            ul.nav.nav-tabs.card-header-tabs.justify-space-around
+            ul.nav.nav-tabs.card-header-tabs.space-around
               li.nav-item
                 a.nav-link.active(aria-current='true', href='#') Fresh Fruits
               li.nav-item
@@ -62,7 +61,11 @@ html(lang='en')
                 a.nav-link(href='#') Groceries
               li.nav-item
                 a.nav-link(href='#') Health Care
-
+              li.nav-item 
+                form.d-flex.pb-2(role='search')
+                  input.form-control.me-2(type='search', placeholder='Search', aria-label='Search')
+                  utton.btn.btn-outline-success(type='submit') Search
+            
           .row
             .col-md-3
               .card-img 
@@ -71,12 +74,12 @@ html(lang='en')
                   h5.card-title Apple
                   p.card-text 
                   span Price: $3.99/kg
-                  .row.mt-2.justify-space-around
-                    .col-md-3.my-2
+                  .row.mt-2.space-around
+                    
+                    .col-4.my-2
                       input.form-control.form-control.price(type="number")
-                    .col-md-6.my-2
-                      a.btn.btn-primary.m-auto(href="#") Add Cart
-                    .row
+                    .col-4.my-2
+                      a.btn.btn-primary.m-auto(href="#") Add
             .col-md-3
               .card-img 
                 img.card-img-top(src="../public/img/guava.jpg", alt="...")
@@ -84,11 +87,11 @@ html(lang='en')
                   h5.card-title Guava
                   p.card-text 
                   span Price: $1.49/kg
-                  .row.mt-2.justify-space-around
-                    .col-md-3.my-2
+                  .row.mt-2.space-around
+                    .col-4.my-2
                       input.form-control.form-control.price(type="number")
-                    .col-md-6.my-2
-                      a.btn.btn-primary.m-auto(href="#") Add Cart
+                    .col-4.my-2
+                      a.btn.btn-primary.m-auto(href="#") Add 
             .col-md-3
               .card-img 
                 img.card-img-top(src="../public/img/orange.jpg", alt="...")
@@ -96,11 +99,11 @@ html(lang='en')
                   h5.card-title Orange
                   p.card-text 
                   span Price: $4.49/kg
-                  .row.mt-2.justify-space-around
-                    .col-md-3.my-2
+                  .row.mt-2.space-around
+                    .col-4.my-2
                       input.form-control.form-control.price(type="number")
-                    .col-md-6.my-2
-                      a.btn.btn-primary.m-auto(href="#") Add Cart
+                    .col-4.my-2
+                      a.btn.btn-primary.m-auto(href="#") Add 
             .col-md-3
               .card-img 
                 img.card-img-top(src="../public/img/mango.jpg", alt="...")
@@ -108,11 +111,71 @@ html(lang='en')
                   h5.card-title Mango
                   p.card-text 
                   span Price: $2.99/kg
-                  .row.mt-2.justify-space-around
-                    .col-md-3.my-2
+                  .row.mt-2.space-around
+                    .col-4.my-2
                       input.form-control.form-control.price(type="number")
-                    .col-md-6.my-2
-                      a.btn.btn-primary.m-auto(href="#") Add Cart
+                    .col-4.my-2
+                      a.btn.btn-primary.m-auto(href="#") Add 
+            .col-md-3
+              .card-img 
+                img.card-img-top(src="../public/img/guava.jpg", alt="...")
+              .card-body
+                  h5.card-title Guava
+                  p.card-text 
+                  span Price: $1.49/kg
+                  .row.mt-2.space-around
+                    .col-4.my-2
+                      input.form-control.form-control.price(type="number")
+                    .col-4.my-2
+                      a.btn.btn-primary.m-auto(href="#") Add 
+            .col-md-3
+              .card-img 
+                img.card-img-top(src="../public/img/orange.jpg", alt="...")
+              .card-body
+                  h5.card-title Orange
+                  p.card-text 
+                  span Price: $4.49/kg
+                  .row.mt-2.space-around
+                    .col-4.my-2
+                      input.form-control.price(type="number")
+                    .col-4.my-2
+                      a.btn.btn-primary.m-auto(href="#") Add 
+            .col-md-3
+              .card-img 
+                img.card-img-top(src="../public/img/mango.jpg", alt="...")
+              .card-body
+                  h5.card-title Mango
+                  p.card-text 
+                  span Price: $2.99/kg
+                  .row.mt-2.space-around
+                    .col-4.my-2
+                      input.form-control.price(type="number")
+                    .col-4.my-2
+                      a.btn.btn-primary.m-auto(href="#") Add 
+
+    section#about-us
+      .flex-container
+        .flex-item-2
+          img(src="public/img/bg-2.jpg", alt="About Us Image")
+        .flex-item-3.about-us-content
+          h2.secondary-heading About Us
+          p At GreenBasket, we're not just an online grocery store; we're your trusted partner in providing fresh and wholesome groceries right at your doorstep. Thank you for choosing GreenBasket, your trusted source for fresh and local groceries.
+    section#contact-us.my-3
+      .container
+        .row.justify-content-center
+          .col-md-6.contact-us-content
+            h1.text-center.secondary-heading Contact Us
+            form
+              .form-group
+                input.form-control.form-control-sm.my-2(type="text", id="name", placeholder="Your Name")
+              .form-group
+                input.form-control.form-control-sm(type="email", id="email", placeholder="Your Email")
+              .form-group
+                textarea.form-control.form-control-sm.my-2(id="message", rows="5", placeholder="Your Message")
+              .text-center
+                button.btn.btn-primary.text-center(type="submit") Submit
+
+
 
 
 

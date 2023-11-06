@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Pacifico&family=Roboto:wght@400;500;700&display=swap');
 *{
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-h1{
-    color: red;
 }
 
 nav{
@@ -14,13 +12,9 @@ nav{
     padding: 7px;
     font-size: 17px;
 }
-nav ul{
-    display: flex;
-    justify-content: space-around;
-}
-nav ul li{
-    list-style: none;
-    align-self: center;
+.justify-space-around{
+    display: flex !important;
+    justify-content: space-around !important;
 }
 
 nav ul li a{
@@ -52,7 +46,6 @@ a:hover{
 
 }
 #product{
-    background-color: yellow;
     max-height: 400px;
     width: 100%;
 
@@ -78,9 +71,36 @@ a:hover{
     padding-bottom: 10px;
 }
 .secondary-heading{
-    font-weight: 900;
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 35px;
+    font-weight: 400;
     font-family: 'Pacifico', cursive;
     padding-bottom: 10px;
+}
+.logo-heading{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+}
+.card {
+    border: none !important;
+  }
+.card-header {
+    /* background-color: transparent !important; */
+    border-bottom: none !important;
+  }
+.card a, .card nav-link, nav-item {
+    border: none !important;
+   
+  }
+  .card .row .col-md-3 .card-img {
+    display: flex;
+    justify-content: center;
+    
+  }
+.card .row .col-md-3 .card-img  img{
+    max-width: 280px;
+    max-width: 280px;
+}
+.price{
+    width: 80px !important;
 }

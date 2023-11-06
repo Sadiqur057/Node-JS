@@ -13,7 +13,7 @@ html(lang='en')
     nav.navbar.navbar-expand-lg.bg-body-tertiary
 
       .container-fluid
-        a.navbar-brand(href='#') GreenBasket
+        a.logo-heading.navbar-brand(href='#') GreenBasket
         button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
           span.navbar-toggler-icon
 
@@ -47,8 +47,73 @@ html(lang='en')
           h1.main-heading GreenBasket
           h1.secondary-heading Your Fresh Green Grocery Source!
         .flex-item-2
-          
+    
+    h1.secondary-heading.text-center.mt-4 Product Categories
     section#product 
       .container
-        | section for product
+        .card
+          .card-header
+            ul.nav.nav-tabs.card-header-tabs.justify-space-around
+              li.nav-item
+                a.nav-link.active(aria-current='true', href='#') Fresh Fruits
+              li.nav-item
+                a.nav-link(href='#') Fresh Vegetables
+              li.nav-item
+                a.nav-link(href='#') Groceries
+              li.nav-item
+                a.nav-link(href='#') Health Care
+
+          .row
+            .col-md-3
+              .card-img 
+                img.card-img-top(src="../public/img/apple.jpg", alt="...")
+              .card-body
+                  h5.card-title Apple
+                  p.card-text 
+                  span Price: $3.99/kg
+                  .row.mt-2.justify-space-around
+                    .col-md-3.my-2
+                      input.form-control.form-control.price(type="number")
+                    .col-md-6.my-2
+                      a.btn.btn-primary.m-auto(href="#") Add Cart
+                    .row
+            .col-md-3
+              .card-img 
+                img.card-img-top(src="../public/img/guava.jpg", alt="...")
+              .card-body
+                  h5.card-title Guava
+                  p.card-text 
+                  span Price: $1.49/kg
+                  .row.mt-2.justify-space-around
+                    .col-md-3.my-2
+                      input.form-control.form-control.price(type="number")
+                    .col-md-6.my-2
+                      a.btn.btn-primary.m-auto(href="#") Add Cart
+            .col-md-3
+              .card-img 
+                img.card-img-top(src="../public/img/orange.jpg", alt="...")
+              .card-body
+                  h5.card-title Orange
+                  p.card-text 
+                  span Price: $4.49/kg
+                  .row.mt-2.justify-space-around
+                    .col-md-3.my-2
+                      input.form-control.form-control.price(type="number")
+                    .col-md-6.my-2
+                      a.btn.btn-primary.m-auto(href="#") Add Cart
+            .col-md-3
+              .card-img 
+                img.card-img-top(src="../public/img/mango.jpg", alt="...")
+              .card-body
+                  h5.card-title Mango
+                  p.card-text 
+                  span Price: $2.99/kg
+                  .row.mt-2.justify-space-around
+                    .col-md-3.my-2
+                      input.form-control.form-control.price(type="number")
+                    .col-md-6.my-2
+                      a.btn.btn-primary.m-auto(href="#") Add Cart
+
+
+
     script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js')

@@ -12,10 +12,20 @@ nav{
     padding: 7px;
     font-size: 17px;
 }
-.justify-space-around{
+.space-around{
     display: flex !important;
     justify-content: space-around !important;
+    /* align-items: start; */
+    
 }
+.col-4{
+    width: 20% ;
+    display: inline-block ;
+    align-self: flex-end;
+}
+
+
+
 
 nav ul li a{
     text-decoration: none;
@@ -37,7 +47,6 @@ a:hover{
 /* ####### landing ####### */
 #landing{
     background: url("../img/landing.jpg") ;
-    /* max-height: 700px; */
     height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,7 +55,7 @@ a:hover{
 
 }
 #product{
-    max-height: 400px;
+    /* height: 400px; */
     width: 100%;
 
 }
@@ -68,7 +77,7 @@ a:hover{
     font-weight: 900;
     font-size: 60px;
     font-family: 'Pacifico', cursive;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .secondary-heading{
     font-size: 35px;
@@ -103,4 +112,79 @@ a:hover{
 }
 .price{
     width: 80px !important;
+}
+
+/* ####### about us ######### */
+
+#about-us {
+    background-color: #f4f4f4; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+.about-us-content{
+    padding: 14px;
+}
+.flex-item-2{
+    width: 50%;
+}
+.flex-item-2 img{
+    height: 400px;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.flex-item-3{
+    width: 50%;
+}
+
+
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 50px;
+    }
+
+    .secondary-heading {
+        font-size: 28px;
+    }
+
+    .logo-heading {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    #landing{
+        height: 40vh;
+    }
+    .main-heading {
+        font-size: 40px;
+    }
+
+    .secondary-heading {
+        font-size: 20px;
+    }
+    .logo-heading {
+        font-size: 12px;
+    }
+    .center{
+        padding-left: 30px;
+        width: 250%;
+    }
+    .about-us-content p{
+        font-size: 12px;
+    }
+}
+
+/* ###### contact us ####### */
+
+.contact-us-content{
+    border: 2px solid rgb(248, 248, 248);
+    border-radius: 7px;
+    padding: 35px !important;
+    margin: 30px !important;
+}
+.sm{
+    width: 10px;
 }

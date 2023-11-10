@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a{
+            text-decoration: none;
+            padding: 10px;
+        }
+    </style>
+    <title>Home Page</title>
+</head>
+<body>
+    <%- include('common/header') %>
+    <h1>Welcome <%= user.name %></h1>
+    <ul>
+        // using forEach loop
+        <% user.skills.forEach((item)=>{%>
+            <li><%= item %></li>
+
+        <% }) %>
+        
+    </ul>
+</body>
+</html>
